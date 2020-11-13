@@ -1,0 +1,16 @@
+#服务的端口和项目名
+server:
+  port: 8082
+  servlet:
+    context-path: /rabbitmq-provider
+
+## rabbitmq config
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123456
+
+    ## 与启动容器时虚拟主机名字一致~~~与启动容器时虚拟主机名字一致~~~与启动容器时虚拟主机名字一致~~~
+    virtual-host: my_vhost
